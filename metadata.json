@@ -1,0 +1,6 @@
+{
+  "name": "My Notes Hub",
+  "description": "Central hub for Google Forms, Equipment Tracking & Asset Movement, and Bulk Calibration Reminders with Asia/Riyadh scheduled notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

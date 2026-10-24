@@ -1,0 +1,81 @@
+{
+  "entities": {
+    "form": {
+      "title": "GoogleForm",
+      "description": "A registered Google Form document with category, URL, and metadata",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the form item",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "title": {
+          "type": "string",
+          "description": "Display title of the form",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "url": {
+          "type": "string",
+          "description": "Validated Google Form link",
+          "minLength": 10,
+          "maxLength": 500
+        },
+        "category": {
+          "type": "string",
+          "description": "Category name for organization",
+          "minLength": 1,
+          "maxLength": 60
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional notes or purpose description",
+          "maxLength": 500
+        },
+        "color": {
+          "type": "string",
+          "description": "Card visual accent color",
+          "maxLength": 30
+        },
+        "ownerId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the user who registered the form",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when form was registered"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of last modification"
+        },
+        "lastOpenedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when form was last opened"
+        },
+        "openCount": {
+          "type": "number",
+          "description": "Total number of times the form link was launched"
+        },
+        "isStarred": {
+          "type": "boolean",
+          "description": "Whether the form is pinned as a favorite"
+        }
+      },
+      "required": ["id", "title", "url", "category", "ownerId"]
+    }
+  },
+  "firestore": {
+    "/forms/{formId}": {
+      "schema": "form",
+      "description": "User Google Forms stored and managed in the hub"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "00",
+    "name": "ddd",
+    "category": "Calibration",
+    "manufacturer": "Not recorded",
+    "model": "Not recorded",
+    "serialNumber": "000",
+    "currentProject": "In Stock",
+    "currentLocation": "Internal Calibration Station",
+    "status": "In Stock",
+    "dateIssued": null,
+    "dateReturned": null,
+    "calibrationDueDate": "2027-02-12",
+    "calibrationStatus": "Valid",
+    "calibrationCategory": "Internal Calibration",
+    "notes": "",
+    "photos": [],
+    "certificates": [],
+    "maintenanceHistory": [
+      {
+        "id": "maint_bulk_1792832582381_00",
+        "date": "2026-10-24",
+        "type": "Calibration",
+        "performedBy": "billal.acts@gmail.com",
+        "details": "Calibration cycle scheduled for 2027-02-12 (Internal Calibration)"
+      }
+    ],
+    "movementHistory": [
+      {
+        "id": "mov_init_00",
+        "equipmentId": "00",
+        "equipmentName": "ddd",
+        "fromLocation": "Origin",
+        "toLocation": "Internal Station",
+        "fromProject": "Stock",
+        "toProject": "Stock",
+        "transferDate": "2026-10-24",
+        "issuedBy": "billal.acts@gmail.com",
+        "receivedBy": "Internal Station",
+        "remarks": "Bulk calibration registration",
+        "timestamp": 1792832582381
+      }
+    ],
+    "createdAt": 1792832582381,
+    "updatedAt": 1792832582381,
+    "source": "manual"
+  }
+]
